@@ -99,7 +99,7 @@ def selectiveMeshCopy(_mesh0, _bMaskList, _color): # 메시를 선택적으로 �
   mesh1.paint_uniform_color( _color) # 새로운 메시를 균일한 색으로 칠합
   return mesh1 # 새로운 메시를 반환
 
-def createTopCoverPixels( _mapToAdd0, _x0, _y0, _x1, _y1, _color0): # 위쪽 커버 픽셀을 생성하는 함수
+def createTopCoverPixels( _mapToAdd0, _x0, _y0, _x1, _y1, _color0): # 위쪽 커버 픽셀을 생성하는 함수dkdfkdf
   tc_pixels_np2d = createZeroPixels( _x0, _y0, _x1, _y1) # 영행렬 픽셀을 생성
   _mapToAdd = np.unique( copy.deepcopy(_mapToAdd0), axis=0) #remove redundant pixels, 중복되는 픽셀을 제거
   for pixel in _mapToAdd:
